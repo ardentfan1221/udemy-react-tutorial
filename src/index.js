@@ -41,7 +41,14 @@ const Book = (props) => {
 		console.log(author)
 	}
 	return (
-		<article className='book'>
+		<article
+			className='book'
+			onMouseOver={() => {
+				console.log(
+					`This is mouse over event and the title you are hovering over is ${title}`
+				)
+			}}
+		>
 			<img src={img} alt='' />
 			<h2>{title}</h2>
 			<h4>{author}</h4>
