@@ -37,6 +37,9 @@ const Book = (props) => {
 	const clickHandler = () => {
 		alert('Out of Stock!!')
 	}
+	const logClicks = (author) => {
+		console.log(author)
+	}
 	return (
 		<article className='book'>
 			<img src={img} alt='' />
@@ -44,6 +47,14 @@ const Book = (props) => {
 			<h4>{author}</h4>
 			<button type='button' onClick={clickHandler}>
 				Buy Now
+			</button>
+			<button
+				type='button'
+				onClick={() => {
+					logClicks(author)
+				}}
+			>
+				Log Author
 			</button>
 		</article>
 	)
