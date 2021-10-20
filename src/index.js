@@ -1,7 +1,7 @@
 import ReactDom from 'react-dom'
 import './index.css'
 import { books } from './books.js'
-import { Book } from './Book.js'
+import Book from './Book.js'
 
 function BookList() {
 	return (
