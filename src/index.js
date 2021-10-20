@@ -34,11 +34,17 @@ function BookList() {
 
 const Book = (props) => {
 	const { img, title, author } = props
+	const clickHandler = () => {
+		alert('Out of Stock!!')
+	}
 	return (
 		<article className='book'>
 			<img src={img} alt='' />
 			<h2>{title}</h2>
 			<h4>{author}</h4>
+			<button type='button' onClick={clickHandler}>
+				Buy Now
+			</button>
 		</article>
 	)
 }
